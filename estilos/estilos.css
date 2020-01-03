@@ -1,1 +1,141 @@
 /* estilos para el protafolio */
+ @font-face{
+    font-family: Colaborate-Bold;
+    src: url(../fonts/ColabBol.otf);
+} 
+body{
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Colaborate-regular';
+    margin: 0;
+}
+/* 
+h1, h2, h3, h4, h5, h6, strong{
+    font-family: 'Colaborate-bold';
+} */
+
+
+
+h1{
+    font-family: 'Colaborate-regular' ;
+    font-size: 32pt;
+    letter-spacing: -.5px;
+    color: #ffffff;
+    text-decoration: ;
+    border-top: 20px #fff solid;
+    display: inline-block;
+    margin-left: -65px;
+}
+
+.header{
+    background-color: #313440;
+    height: 30px;
+    color: #ffffff;
+    /* margin-top: -16px;
+    margin-left: -8px; */
+}
+
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo{
+    background-image: url(../imagenes/logo.svg);
+    height: 300px;
+    /* margin: 150px 0 0 200px; */
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+}
+
+.hero-image{
+    background-image: url(../imagenes/fondo-persona.jpg);
+    height: 750px;
+    background-size: 1903px 900px;
+    background-repeat: no-repeat;
+    padding: 150px 0 0 350px;
+}
+
+strong{    
+    font-family: 'Colaborate-Bold';
+    font-size: 34pt;
+    color: #fa0063;
+}
+
+.line{
+    height: 25px;
+    background: #313440;
+}
+
+.section-title{
+    color: #0bc1c8;
+    text-align: center;
+    font-size: 50pt;
+    margin: 5px 0;
+}
+
+.first-part{
+    height: 300px;
+    margin: 0 60px;
+    padding: 20px 200px;
+    border-radius: 10px 10px 0 0;
+    background-color: #f3f3f3;
+}
+
+
+.skill-card{
+    display: inline-block;
+    /* background-color: red; */
+    margin: 6px 51px;
+}
+
+.skill-card img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 160px;
+}
+
+.skill-card h4{
+    font-family: 'Colaborate-Bold';
+    font-size: 30pt;
+    margin: 0;
+    text-align: center;
+}
+.skill-card p{
+    margin: 5px 20px;
+    display: inline-block;
+    font-size: 14pt;
+    text-align: center;
+}
+
+/* parte 2 */
+
+.second-part{
+    background:#f3f3f3;
+    margin: 0px;
+    height: 465px;
+    margin: 0 60px 20px 60px;
+    padding: 20px 200px;
+    border-radius: 0 0 10px 10px;
+}
+.skill{
+    display: inline-block;
+    /* background-color: green; */
+    margin: 0px 15px;
+    width: 649px;
+}
+.second-part img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 260px;
+}
+.second-part h3{
+    font-family: 'Colaborate-Bold';
+    font-size: 30pt;
+    text-align: center;
+    margin: 5px;
+}
+.second-part p{
+    font-size: 14pt;
+    text-align: center;
+}
