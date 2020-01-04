@@ -22,7 +22,7 @@ ul{
 
 .header{
     background-color: #313440;
-    height: 60px;
+    height: 65px;
     color: #ffffff;
 }
 .menu{
@@ -42,21 +42,28 @@ ul{
 .header a{
     display: flex;
     align-items: center;
-    height: inherit;
+    height: 50px;
     color: #fff;
     text-decoration: none;
     font-size: 20pt;
-    padding: 0 15px;
+    padding: 5px 15px 0px 15px;
+}
+.header a:hover,
+.header a:active{
+    color: #fa0063;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    border-bottom: #fa0063 10px solid;
+    position: static;
 }
 
 .hero-image{
-    border-top: teal 3px solid;
+    /* border-top: teal 10px solid; */
     height: 880px;
     background-image: url(/imagenes/fondo-persona.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
 }
 .hero {
     margin: 0px;
