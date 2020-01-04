@@ -13,17 +13,6 @@ h1, h2, h3, h4, h5, h6, strong{
     font-family: 'Colaborate-bold';
 } */
 
-h1{
-    font-family: 'Colaborate-regular' ;
-    font-size: 32pt;
-    letter-spacing: -.5px;
-    color: #ffffff;
-    text-decoration: ;
-    border-top: 20px #fff solid;
-    display: inline-block;
-    margin-left: -65px;
-}
-
 ol,
 ul{
     margin: 0;
@@ -60,40 +49,73 @@ ul{
     padding: 0 15px;
 }
 
+.hero-image{
+    border-top: teal 3px solid;
+    height: 880px;
+    background-image: url(/imagenes/fondo-persona.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero {
+    margin: 0px;
+    padding-top: 100px;
+    width: 1000px;
+    text-align: center;
+    box-sizing: border-box;
+    height: inherit;
 
-
-
-
-
-
-
+}
 .logo{
     background-image: url(../imagenes/logo.svg);
     height: 300px;
-    /* margin: 150px 0 0 200px; */
+    box-sizing: border-box;
     background-size: 300px 300px;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
-.hero-image{
-    background-image: url(../imagenes/fondo-persona.jpg);
-    height: 750px;
-    background-size: 1903px 900px;
-    background-repeat: no-repeat;
-    padding: 150px 0 0 350px;
+.hero h1{
+    font-family: 'Colaborate-regular' ;
+    font-size: 32pt;
+    letter-spacing: -.5px;
+    color: #ffffff;
 }
-
-strong{    
+strong{
+    border-top: 15px #fff solid;    
     font-family: 'Colaborate-Bold';
     font-size: 34pt;
     color: #fa0063;
 }
 
+.btn{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    font-family: 'Colaborate-Regular';
+    font-size: 18pt;
+    padding: 10px 0;
+    border: 4px solid #fa0063;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn:hover, .btn:active{
+    background-color: teal;
+    border: 4px solid teal;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+
 .line{
     height: 25px;
     background: #313440;
 }
-
 .section-title{
     color: #0bc1c8;
     text-align: center;

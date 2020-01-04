@@ -39,6 +39,10 @@
             $('#m-redes').click(function(){
                 $('#redes').animatescroll({scrollSpeed:2000,easing:'easeOutQuint'});
             }); 
+            $('#ver-trabajo').click(function(){
+                $('#proyectos').animatescroll({scrollSpeed:2000,easing:'easeOutQuint'});
+            }); 
+
             
     });
     </script>
@@ -57,14 +61,15 @@
         </nav>
     </header>
     <section class="hero-image">
-        <div class="logo"></div>
-        <h1 class="legend">
-            Hola, soy <strong class="name">Ariel Churas</strong>, <br>y soy programador y <br>diseñador apacionado
-        </h1>
-        <!-- <img class="hero" src="imagenes/fondo-persona.jpg"> -->
-        <button class="view-work">
-            ver mi trabajo
-        </button>
+        <section class="hero">
+            <div class="logo"></div>
+            <h1>
+                Hola, soy <strong class="name">Ariel Chura</strong>, <br> soy programador y <br>diseñador apacionado
+            </h1>
+            <a id="ver-trabajo" class="btn">
+                ver mi trabajo
+            </a>
+        </section>
     </section>
 <div class="line"></div>
 <!-- Acerca de -->
