@@ -3,7 +3,8 @@
     font-family: Colaborate-Bold;
     src: url(../fonts/ColabBol.otf);
 } 
-body{
+body,
+textarea{
     /* font-family: 'Rubik', sans-serif; */
     font-family: 'Colaborate-regular';
     margin: 0;
@@ -123,11 +124,17 @@ strong{
     height: 25px;
     background: #313440;
 }
+.title-container{
+    display: flex;
+    justify-content: center;
+}
 .section-title{
-    color: #0bc1c8;
-    text-align: center;
+    color: teal;
+    display: flex;
+    justify-content: center;
     font-size: 50pt;
-    margin: 5px 0;
+    margin: 6px 0;
+    border-bottom: 11px solid #fa0063;
 }
 
 .first-part{
@@ -137,12 +144,16 @@ strong{
     border-radius: 10px 10px 0 0;
     background-color: #f3f3f3;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-
 .skill-card{
+    width: 240px;
     /* background-color: red; */
     margin: 6px 51px;
+    /* flex-wrap: wrap; */
+    flex-shrink: 0;
 }
 
 .skill-card img{
@@ -163,6 +174,7 @@ strong{
     display: inline-block;
     font-size: 14pt;
     text-align: center;
+
 }
 
 /* parte 2 */
@@ -172,18 +184,37 @@ strong{
     margin: 0px;
     height: 465px;
     margin: 0 60px 20px 60px;
-    padding: 20px 200px;
+    padding: 40px 200px 20px;
     border-radius: 0 0 10px 10px;
     display: flex;
+    justify-content: space-between;
 }
 .skill{
-
-    /* background-color: green; */
     margin: 0px 15px;
     width: 649px;
+    height: inherit;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
-.second-part img {
+.skill-exp{
+    padding-top: 30px;
+    width: 649px;
+    height: inherit;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+
+}
+
+.experience{
+    width: inherit;
+    height: 30px;
+    margin: 10px 0px;
+}
+
+.second-part .imagen {
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -200,6 +231,7 @@ strong{
     text-align: center;
 }
 
+
 .items{
     background-color: #f3f3f3;
     height: 850px;
@@ -212,51 +244,170 @@ strong{
     justify-content: space-around;
     
 }
-
 .project-card{
-    background-color: blueviolet;
+    background-image: url(../imagenes/business.jpg);
     width: 300px;
-    height: 300px;
+    background-size: 300px 300px;
     box-sizing: border-box;
     margin: 5px;
-    flex-shrink: 0;    
+    flex-shrink: 0;
+    border-right: 7px solid teal;
+    border-bottom: 7px solid teal;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-container{ 
+    height: 50px;
+}
+.btn-event{
+    width: inherit;
+    height: 10px;
+    text-align: center;
+    font-family: 'Colaborate-Bold';
+    font-size: 18pt;
+    padding: 10px 0;
+    border: 4px solid teal;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    flex-shrink: 0;
+}
+.btn-event:hover{
+    background-color: teal;
+    border: 4px solid teal;
+    color: white;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.project-card p{
+    font-family: 'Colaborate-Bold';
+    border-radius: 1px solid teal;
+    color: white;
+    font-size: 18pt;
+    margin: 1px 20px;
 }
 
 .blog-card{
-    background-color: blueviolet;
+    background-color: white;
+    border-radius: 10px;
+    border-right: #313440 4px solid;
+    border-bottom: #313440 4px solid;
     width: 300px;
     height: 500px;
     box-sizing: border-box;
     margin: 50px 5px;
     display: inline-block;
+    overflow: hidden;
+
+
 }
 .blog-card img{
-    background-color: brown;
+    background-image: url(../imagenes/notebook.jpg);
     width: 300px;
     height: 250px;
 }
-.blog-card h5 {
+
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+.blog-content h5 {
     font-family: 'Colaborate-Bold';
     font-size: 28pt;
     margin: 10px 20px;
 }
-.blog-card p {
+.blog-content h6 {
+    text-transform: uppercase;
+    margin: 5px 20px;
+    font-size: 10pt;
+    color: gray;
+}
+.blog-content p {
     margin: 5px 20px;
     font-size: 14pt;
 }
-
-.blog-card a{
+.div{
+    width: 100px;
+    height: 100px;
+    padding: 0 15px 20px 0;
+    align-self: flex-end;
+    justify-content: right;
+    display: flex;
+}
+.blog-content div a{
     font-size: 16pt;
     text-decoration: none;
+    align-self: flex-end;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    color: #313440;
+    border: 4px solid;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
-.contacto-mapa{
-    background-color: #4f5467;
+
+.blog-content div a:hover{
+    
+    border: 4px solid #fa0063;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.contact{
+    background-color: #f3f3f3;
     height: 500px;
     margin: 0 60px 20px 60px;
     padding: 120px 422px;
     border-radius: 10px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
+
+.contact-form input{
+    height: 30px;
+    width: 500px;
+    background-color: #313440;
+    color: white;
+    font-size: 14pt;
+    padding: 0 30px;
+    margin: 7px 0;
+    display: block;
+}
+
+.contact-form textarea{
+    height: 150px;
+    width: 500px;
+    background-color: #313440;
+    color: white;
+    font-size: 14pt;
+    padding: 10px 30px;
+    margin: 7px 0;
+}
+
+.btn-form{
+    font-size: 16pt;
+    text-decoration: none;
+    align-self: flex-end;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    color: #313440;
+    border: 4px solid;
+    display: block;
+    justify-content: right;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+    
+.btn-form:hover{       
+    border: 4px solid #fa0063;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+
 
 .footer{
     background-image: url(../imagenes/fondo.png);
