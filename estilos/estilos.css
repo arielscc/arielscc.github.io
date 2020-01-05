@@ -26,14 +26,21 @@ ul{
     height: 65px;
     color: #ffffff;
 }
+.nav-container{
+    margin: 0 200px 0 100px ;
+    align-self: flex-start;
+}
+.nav-container img{
+    width: 30px;
+    margin: 0 10px 0 0;
+}
 .menu{
-    height: inherit;
+    display: flex;
+    justify-content: space-between;
 }
 .header ol{
-    display: flex;
+    display: inherit;
     height: inherit;
-    justify-content: right;
-    
 }
 
 .header ol li{
