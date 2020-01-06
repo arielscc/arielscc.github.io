@@ -72,6 +72,7 @@ ul{
     background-position: center;
     background-size: cover;
     /* position: relative; */
+    display: flex;
 }
 .hero {
     margin: 0px;
@@ -145,20 +146,21 @@ strong{
 }
 
 .first-part{
-    height: 300px;
+    /* height: 300px; */
     margin: 0 60px;
     padding: 20px 200px;
     border-radius: 10px 10px 0 0;
     background-color: #f3f3f3;
+    /* background-color: teal; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .skill-card{
     width: 240px;
     /* background-color: red; */
-    margin: 6px 51px;
+    margin: 6px 40px;
     /* flex-wrap: wrap; */
     flex-shrink: 0;
 }
@@ -188,20 +190,22 @@ strong{
 
 .second-part{
     background:#f3f3f3;
+    /* background: red; */
     margin: 0px;
-    height: 465px;
+    /* height: 465px; */
     margin: 0 60px 20px 60px;
     padding: 40px 200px 20px;
     border-radius: 0 0 10px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .skill{
     margin: 0px 15px;
     width: 649px;
     height: inherit;
     box-sizing: border-box;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 .skill-exp{
     padding-top: 30px;
@@ -211,7 +215,7 @@ strong{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 
 }
 
@@ -241,9 +245,9 @@ strong{
 
 .items{
     background-color: #f3f3f3;
-    height: 850px;
+    /* height: 850px; */
     margin: 0 60px 20px 60px;
-    padding: 120px 422px;
+    padding: 40px 200px 20px;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -254,9 +258,10 @@ strong{
 .project-card{
     background-image: url(../imagenes/business.jpg);
     width: 300px;
+    height: 300px;
     background-size: 300px 300px;
     box-sizing: border-box;
-    margin: 5px;
+    margin: 10px 25px;
     flex-shrink: 0;
     border-right: 7px solid teal;
     border-bottom: 7px solid teal;
@@ -264,6 +269,7 @@ strong{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-shrink: 0;
 }
 .btn-container{ 
     height: 50px;
@@ -307,6 +313,7 @@ strong{
     margin: 50px 5px;
     display: inline-block;
     overflow: hidden;
+    flex-shrink: 0;
 
 
 }
@@ -367,7 +374,7 @@ strong{
     background-color: #f3f3f3;
     height: 500px;
     margin: 0 60px 20px 60px;
-    padding: 120px 422px;
+    padding: 120px;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -418,22 +425,28 @@ strong{
 
 .footer{
     background-image: url(../imagenes/fondo.png);
-    height: 150px;
+    /* height: 150px; */
     margin: 0;
-    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
 }
 .red{
     /* background-color: violet; */
-    height: 80px;
+    /* height: 80px; */
     margin: 0;
     padding: 15px 0 ;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .red a{
     align-items: center;
     height: inherit;
-    margin: 0 20px;
+    margin: 5px 20px;
+    widows: 80px;
+    height: 80px;
+    flex-shrink: 0;
 }
 
 .red img{
@@ -445,8 +458,4 @@ strong{
 }
 .cc{
     width: 12px;
-}
-
-.copyright{
-    margin: 0;
 }
