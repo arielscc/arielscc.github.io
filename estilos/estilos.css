@@ -144,11 +144,7 @@ strong{
 }
 
 .first-part{
-<<<<<<< HEAD
     margin: 1% 5% 0;
-=======
-    margin: 0 5%;
->>>>>>> a734d4285b36d44b6baf7c26cd848b9130dadd79
     padding: 1% 10%;
     border-radius: 10px 10px 0 0;
     background-color: #f3f3f3;
@@ -418,9 +414,6 @@ strong{
     border: 4px solid #fa0063;
     transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
-
-
-
 .footer{
     background-image: url(../imagenes/fondo.png);
     /* height: 150px; */
@@ -501,10 +494,6 @@ strong{
     }
     .skill-card img{
         max-width: 100%;
-<<<<<<< HEAD
-=======
-
->>>>>>> a734d4285b36d44b6baf7c26cd848b9130dadd79
     }
     .second-part{
         font-size: 16px;
@@ -523,14 +512,6 @@ strong{
     .experience{
         margin: 1% 0;  
     }
-<<<<<<< HEAD
-
-    .blog-card{
-        font-size: initial;
-    }
-
-=======
->>>>>>> a734d4285b36d44b6baf7c26cd848b9130dadd79
 }
 @media screen and (max-width: 480px){
     
