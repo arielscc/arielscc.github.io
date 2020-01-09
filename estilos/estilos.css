@@ -232,8 +232,6 @@ strong{
     text-align: center;
 }
 
-
-
 .items{
     background-color: #f3f3f3;
     margin: 2% 5% 5%;
@@ -243,6 +241,7 @@ strong{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-size: 20px;
 }
 .project-card{
     background-image: url(../imagenes/business.jpg);
@@ -260,6 +259,7 @@ strong{
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
+    font-size: .8em;
 }
 
 .btn-container{ 
@@ -267,7 +267,7 @@ strong{
 }
 .btn-event{
     font-family: 'Colaborate-Bold';
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 10px 5px;
     border: 5px solid teal;
     margin-top: 5px;
@@ -287,7 +287,7 @@ strong{
     height: 50%;
     background-color: rgba(34, 164, 185, 0.86);
     border-radius: 5px;
-    margin: auto;    
+    margin: auto;
 }
 .project-card p{
     font-family: 'Colaborate-Bold';
@@ -302,23 +302,25 @@ strong{
     border-right: #313440 4px solid;
     border-bottom: #313440 4px solid;
     width: 300px;
+    height: 600px;
     box-sizing: border-box;
     margin: 5% 1%;
-    display: inline-block;
     overflow: hidden;
-    flex-shrink: 0;
     font-size: 20px;
+    padding-bottom: 1%;
 }
 .blog-card img{
     background-image: url(../imagenes/notebook.jpg);
-    width: 300px;
-    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: 40%;
 }
 
 .blog-content{
     display: flex;
     flex-direction: column;
-
+    height: 60%;
 }
 
 .blog-content h5 {
@@ -337,15 +339,14 @@ strong{
     font-size: 1em;
 }
 .div{
-    width: 100px;
-    height: 100px;
-    padding: 0 15px 20px 0;
-    align-self: flex-end;
-    justify-content: right;
+    width: 94%;
+    height: 100%;
+    margin: 1px 3%;
     display: flex;
+    justify-content: flex-end;
 }
 .blog-content div a{
-    font-size: 16pt;
+    font-size: 1em;
     text-decoration: none;
     align-self: flex-end;
     border-radius: 5px;
@@ -366,7 +367,7 @@ strong{
     background-color: #f3f3f3;
     height: 50%;
     margin: 2% 5% 5%;
-    padding: 1% 10%;
+    padding: 2% 10%;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -489,7 +490,11 @@ strong{
     .section-title{
         font-size: 2em;
     }
-    .first-part{
+    .first-part,
+    .second-part,
+    .items,
+    .blog-card
+    {
         font-size: 16px;
     }
     .skill-card img{
@@ -510,8 +515,11 @@ strong{
         margin: 2% 0;
     }
     .experience{
-        margin: 1% 0;  
+        margin: 1% 0;
     }
+
+    .blog-card
+
 }
 @media screen and (max-width: 480px){
     
