@@ -26,6 +26,7 @@ ul{
     height: 65px;
     padding: 0 3% 0 ;
     border-bottom: teal solid 5px;
+    /* position: fixed; */
 }
 
 .header img{
@@ -385,6 +386,7 @@ strong{
     color: white;
     font-size: 1em;
     margin: 1% 0;
+    padding: 0 3%;
     display: block;
 }
 
@@ -395,6 +397,7 @@ strong{
     color: white;
     font-size: 14pt;
     margin: 1% 0;
+    padding: 0 3%;
 }
 
 .btn-form{
