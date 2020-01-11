@@ -44,7 +44,9 @@
             $('#ver-trabajo').click(function(){
                 $('#proyectos').animatescroll({scrollSpeed:2000,easing:'easeOutQuint'});
             }); 
-
+            $('#go-home').click(function(){
+                $('#inicio').animatescroll();
+            }); 
             
     });
     </script>
@@ -66,7 +68,7 @@
             </nav>
     </header>
 <!-- Hero image -->
-    <!-- <section class="hero-image">
+    <section class="hero-image">
         <section class="hero">
             <div class="logo"></div>
             <h1>
@@ -76,7 +78,7 @@
                 ver mi trabajo
             </a>
         </section>
-    </section>-->
+    </section>
 
 <div class="line"></div> 
 <!-- Acerca de -->
@@ -228,9 +230,7 @@
                     <h5 class="card-title">Dinamico</h5>
                     <h6>agosto 26/2018</h6>
                     <p>Los sitios ido porque sir rapido porque sir rapido porque sir rapido porque sir rapido porque si</p>
-                    <div class="div">
-                        <a href="">ver</a>
-                    </div>
+                    <a href="">ver</a>
                 </div>
             </article>
             <article class="blog-card">
@@ -239,9 +239,7 @@
                     <h5 class="card-title">Dinamico</h5>
                     <h6>agosto 26/2018</h6>
                     <p>Los sitios web deben cargar super rapido porque si. r rapido porque sir rapido porque sir rapido porque sir rapido porque sir rapido porque si</p>
-                    <div class="div">
-                        <a href="">ver</a>
-                    </div>
+                    <a href="">ver</a>
                 </div>
             </article>
         </section>
@@ -280,5 +278,12 @@
         </div>
         <p class="copyright">Ariel Chura <img class="cc" src="imagenes/copyright.svg"> 2020</p>
     </footer>
+
+    <!-- adicionales -->
+
+    <div class="btn-home" id="go-home">
+        <a href=""> <img src="imagenes/flechitas.png" width="70px" alt=""></a>
+    </div>
+
 </body>
 </html>

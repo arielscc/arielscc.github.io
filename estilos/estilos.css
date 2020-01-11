@@ -64,23 +64,18 @@ ul{
 }
 
 .hero-image{
-    /* border-top: teal 10px solid; */
-    height: 880px;
-    background-image: url(/imagenes/fondo-persona.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 820px;
+    background: url(/imagenes/fondo-persona.jpg) no-repeat right;
     background-size: cover;
-    /* position: relative; */
-    display: flex;
+    position: relative;
 }
 .hero {
     margin: 0px;
-    padding-top: 100px;
-    width: 1000px;
     text-align: center;
-    box-sizing: border-box;
-    height: inherit;
-
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    font-size: 20px;
 }
 .logo{
     background-image: url(../imagenes/logo.svg);
@@ -94,14 +89,13 @@ ul{
 
 .hero h1{
     font-family: 'Colaborate-regular' ;
-    font-size: 32pt;
+    font-size: 2em;
     letter-spacing: -.5px;
     color: #ffffff;
 }
-strong{
-    border-top: 15px #fff solid;    
+strong{   
     font-family: 'Colaborate-Bold';
-    font-size: 34pt;
+    font-size: 1.2em;
     color: #fa0063;
 }
 
@@ -110,7 +104,7 @@ strong{
     width: 300px;
     text-align: center;
     font-family: 'Colaborate-Regular';
-    font-size: 18pt;
+    font-size: 1em;
     padding: 10px 0;
     border: 4px solid #fa0063;
     border-radius: 5px;
@@ -252,7 +246,7 @@ strong{
     width: 300px;
     height: 300px;
     box-sizing: border-box;
-    margin: 10px 25px;
+    margin: 1% 3%;
     border-right: 7px solid teal;
     border-bottom: 7px solid teal;
     text-align: center;
@@ -454,12 +448,23 @@ strong{
     width: 12px;
 }
 
+.btn-home{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 .3em 5em;
+}
+
+/* Media Queris */
 
 @media screen and (max-width: 1024px){
-
+    .hero-image{
+        background-position: 90%;
+    }
 }
 
 @media screen and (max-width: 767px){
+
     .header{
         height: auto;
         padding: 0 1em 0 1em;
@@ -481,10 +486,23 @@ strong{
 
     .header a:hover,
     .header a:active{
-    color: #fa0063;
-    transition: background-color 0.3s ease-out, color 0.3s ease-out;
-    border-bottom: initial;
-    position: static;
+        color: #fa0063;
+        transition: background-color 0.3s ease-out, color 0.3s ease-out;
+        border-bottom: initial;
+        position: static;
+    }
+    .hero-image{
+        background-position: 80%;
+    }
+    .hero {
+        left: 0;
+        bottom: 5%;
+        right: 0;
+        font-size: 16px;
+    }
+    .logo{
+        height: 200px;
+        background-size: 200px;
     }
     .line{
         height: 10px;
@@ -519,19 +537,40 @@ strong{
     .experience{
         margin: 1% 0;
     }
+    .btn-home{
+        display: none;
+
+    }
 }
 @media screen and (max-width: 480px){
+    .hero-image{
+        background-position: 82%;
+    }
     .red a{
         height: 50px;
-    }
-    .footer p{
-        font-size: .7em;
     }
     .cc{
         width: 8px;
     }
 }
 @media screen and (max-width: 320px){
+      
+    .logo {
+        height: 100px;
+        background-size: 100px;
+        background-position: center;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    strong{
+        font-size: 1.2em;
+    }
+    .btn {
+        font-size: 1.5em;
+        width: 200px;
+    }
+
     .red a{
         height: 30px;
     }
