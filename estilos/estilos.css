@@ -544,7 +544,10 @@ strong{
 }
 @media screen and (max-width: 480px){
     .hero-image{
-        background-position: 82%;
+        background-position: 84%;
+    }
+    .btn {
+        width: 200px;
     }
     .red a{
         height: 50px;
@@ -560,17 +563,12 @@ strong{
         background-size: 100px;
         background-position: center;
     }
-    .hero h1 {
+    .hero h1{
         font-size: 1.5em;
-    }
-    strong{
-        font-size: 1.2em;
     }
     .btn {
-        font-size: 1.5em;
         width: 200px;
     }
-
     .red a{
         height: 30px;
     }
