@@ -53,7 +53,8 @@
     </script>
 </head>
 <body>
-    <span class="icon icon-menu hamburger-menu" id="hamburger-icon"></span>
+    <span class="icon icon-menu hamburger-menu" id="hamburger-icon">
+    </span>
     <header id="inicio" class="header">
             <nav class="menu">
                 <div>
@@ -288,18 +289,32 @@
     </div>
 
     <script>
-        let menu = document.querySelector('.menu-ol');
-        console.log(menu);
-        let burgerIcon = document.querySelector('#hamburger-icon');
-        console.log(burgerIcon);
+        const menu = document.querySelector('.menu-ol');
+        const burgerIcon = document.querySelector('#hamburger-icon');
+        const media = window.matchMedia('screen and (max-width: 767px)');
 
-        burgerIcon.addEventListener('click', function(){
-            if(menu.classList.contains('is-active')){
-                menu.classList.remove('is-active');
+        media.addListener( validation );
+        validation( media );
+        function validation( event ){
+            console.log( event );
+            if( event.matches ){
+                burgerIcon.addEventListener( 'click', hideShow );
             }else{
-                menu.classList.add('is-active')
+                burgerIcon.removeEventListener( 'click', hideShow );
             }
-        });
+        }
+
+        function hideShow(){
+            if(menu.classList.contains( 'is-active' )){
+                menu.classList.remove( 'is-active' );
+            }else{
+                menu.classList.add( 'is-active' )
+            }
+        }
+        
+        
+
+
     </script>
 </body>
 </html>
