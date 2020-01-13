@@ -30,8 +30,40 @@
     }
 
 .icon-menu:before {
-content: "\1f494";
+    content: "\1f494";
 }
+.icon-jquery:before {
+    content: "\e906";
+    color: #0769ad;
+}
+  .icon-php:before {
+    content: "\e900";
+    color: #777bb4;
+ }
+  .icon-laravel:before {
+    content: "\e902";
+    color: #ff2d20;
+}
+  .icon-css3:before {
+    content: "\e903";
+    color: #1572b6;
+}
+  .icon-node-dot-js:before {
+    content: "\e904";
+    color: #393;
+}
+  .icon-html5:before {
+    content: "\e905";
+    color: #e34f26;
+}
+  .icon-node-dot-js1:before {
+    content: "\e901";
+    color: #339199;
+}
+  .icon-menu:before {
+    content: "\1f494";
+}
+  
 .hamburger-menu{
     width: 40px;
     height: 40px;
