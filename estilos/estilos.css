@@ -6,15 +6,15 @@
 @font-face {
     font-family: 'icomoon';
     src:
-      url('../fonts/icomoon.ttf?o27vns') format('truetype'),
-      url('../fonts/icomoon.woff?o27vns') format('woff'),
-      url('../fonts/icomoon.svg?o27vns#icomoon') format('svg');
+      url('../fonts/icomoon.ttf?r1h7ni') format('truetype'),
+      url('../fonts/icomoon.woff?r1h7ni') format('woff'),
+      url('../fonts/icomoon.svg?r1h7ni#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
   }
   
-.icon {
+  .icon {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -23,47 +23,43 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-
+  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    }
-
-.icon-menu:before {
-    content: "\1f494";
-}
-.icon-jquery:before {
+  }
+  
+  .icon-jquery:before {
     content: "\e906";
     color: #0769ad;
-}
+  }
   .icon-php:before {
     content: "\e900";
     color: #777bb4;
- }
+  }
   .icon-laravel:before {
     content: "\e902";
     color: #ff2d20;
-}
+  }
   .icon-css3:before {
     content: "\e903";
     color: #1572b6;
-}
+  }
   .icon-node-dot-js:before {
     content: "\e904";
     color: #393;
-}
+  }
   .icon-html5:before {
     content: "\e905";
     color: #e34f26;
-}
+  }
   .icon-node-dot-js1:before {
     content: "\e901";
     color: #339199;
-}
+  }
   .icon-menu:before {
     content: "\1f494";
-}
-  
+  }
 .hamburger-menu{
     width: 40px;
     height: 40px;
@@ -300,7 +296,7 @@ strong{
 .items{
     background-color: #f3f3f3;
     margin: 2% 5% 5%;
-    padding: 1% 5%;
+    padding: 2% 5%;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -308,7 +304,62 @@ strong{
     justify-content: space-around;
     font-size: 20px;
 }
-.project-card{
+
+
+.project-container{
+    margin: 2% 3%;
+    width: 300px;
+    height: 400px;
+    border-bottom: 5px #313440 solid;
+    border-right: 5px #313440 solid;
+    border-left: 5px #313440 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.project-header{
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+.project-tools{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-img{
+    height: 50%;
+    width: auto;
+    margin-top: -10%;
+    position: relative;
+}
+.project-img img{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.project-title{
+    height: 10%;
+    text-align: center;
+}
+.project-description{
+    height: 30%;
+    text-align: center;
+}
+
+/* .project-title{
+    border: solid 2 px teal;
+    width: auto;
+    height: 20%;
+} */
+
+/* .project-card{
     background-image: url(../imagenes/business.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -359,7 +410,7 @@ strong{
     border-radius: 1px solid teal;
     font-size: 1em;
     margin: 1px 20px;
-}
+} */
 
 .blog-card{
     background-color: white;
@@ -376,9 +427,9 @@ strong{
     position: relative;
 }
 .blog-card img{
-    background-image: url(../imagenes/notebook.jpg);
+    /* background-image: url(../imagenes/notebook.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: inherit;
     height: 40%;
 }
@@ -607,6 +658,7 @@ strong{
     {
         font-size: 16px;
     }
+    
     .skill-card img{
         max-width: 100%;
     }
@@ -629,7 +681,10 @@ strong{
     }
     .btn-home{
         display: none;
-
+        
+    }
+    .project-container{
+        margin: 10% 2%;   
     }
 }
 @media screen and (max-width: 480px){
